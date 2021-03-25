@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Desafio 02 Troca de Imagens"
