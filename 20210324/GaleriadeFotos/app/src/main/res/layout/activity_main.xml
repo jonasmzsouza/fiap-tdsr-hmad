@@ -1,0 +1,56 @@
+<LinearLayout
+    android:background="#000000"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:text="Galeria de Fotos"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imgGaleria01"
+        android:layout_height="300dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="300dp"
+        android:src="@drawable/p0" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:background="#D10448"
+            android:id="@+id/btnVoltar"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:onClick="navegar"
+            android:text="@string/prev"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+        <Button
+            android:background="#D10448"
+            android:id="@+id/btnProx"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:onClick="navegar"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
