@@ -31,7 +31,9 @@ class MainActivity : AppCompatActivity() {
             resp = "é"
         }
 
-        Toast.makeText(this, "A palavra ou frase ${resp} palíndroma.", Toast.LENGTH_SHORT).show()
+        val msg = "A palavra ou frase ${resp} palíndroma."
+
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
     fun removeAcento(str: String): String {
