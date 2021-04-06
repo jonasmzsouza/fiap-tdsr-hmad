@@ -19,27 +19,42 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    /**
+     *  Evento disparado pelo botão verificarString
+     *
+     *  @param view
+     */
     fun verificarString(view: View) {
-        var strInput = etInput.text.toString().toLowerCase().replace(" ", "")
-        val re = Regex("[^a-z]")
-        strInput = re.replace(removeAcento(strInput), "")
-        val strInvertida = strInput.reversed()
+        var strInput = etInput.text.toString().trim().toLowerCase()
 
-        var resp = "não é"
-
-        if (strInvertida == strInput) {
-            resp = "é"
+        if (strInput.isEmpty()) {
+            toast(getString(R.string.Informe_corretamente))
+            return
         }
 
-        val msg = "A palavra ou frase ${resp} palíndroma."
+        val regex = "[^a-z]".toRegex()
+        strInput = regex.replace(removeAcento(strInput), "")
+        val strInvertida = strInput.reversed()
 
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+        val msg = if (strInput.equals(strInvertida)) getString(R.string.eh_palindormo) else getString(R.string.nao_eh_palindromo)
+
+        toast(msg)
     }
 
+    /**
+     *  Função que substitui vogais com acentos verificarString
+     *
+     *  @param str
+     *  @return String
+     */
     fun removeAcento(str: String): String {
         var strSemAcento: String = Normalizer.normalize(str, Normalizer.Form.NFD)
         strSemAcento = strSemAcento.replace("[^\\p{ASCII}]", "")
         return strSemAcento
+    }
+
+    fun toast(msg: String) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
 }

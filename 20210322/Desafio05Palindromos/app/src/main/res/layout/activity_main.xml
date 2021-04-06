@@ -10,9 +10,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Informa a palavra ou frase" />
+        android:text="@string/informa_a_palavra_ou_frase" />
 
     <EditText
+        android:hint="@string/subi_no_onibus"
         android:id="@+id/etInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -21,6 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:onClick="verificarString"
-        android:text="Verificar" />
+        android:text="@string/verificar" />
 
 </LinearLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Desafio 05 Palíndromos</string>
+    <string name="informa_a_palavra_ou_frase">Informa a palavra ou frase</string>
+    <string name="subi_no_onibus">subi no ônibus</string>
+    <string name="verificar">Verificar</string>
+    <string name="Informe_corretamente">Informe corretamente uma palavra ou frase</string>
+    <string name="eh_palindormo">É um palíndromo</string>
+    <string name="nao_eh_palindromo">Não é um palíndromo</string>
 </resources>

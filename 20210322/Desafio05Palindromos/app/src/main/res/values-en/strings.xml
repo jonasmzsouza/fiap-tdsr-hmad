@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Challenge 05 Palindromes</string>
+    <string name="informa_a_palavra_ou_frase">Tells the word or phrase</string>
+    <string name="subi_no_onibus">Stop pots</string>
+    <string name="verificar">Verify</string>
+    <string name="Informe_corretamente">Enter a word or phrase correctly</string>
+    <string name="eh_palindormo">"It's a palindrome"</string>
+    <string name="nao_eh_palindromo">It is not a palindrome</string>
+</resources>
