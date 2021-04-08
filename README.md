@@ -33,5 +33,8 @@ Repositório de atividades e exercícios da graduação de Tecnologia em Anális
 #### 31/03/2021 -> Aula 09 - Interface Gráfica
 - [InterfaceGrafica04](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210331/InterfaceGrafica04/app/src/main)
 
-#### 06/04/2021 -> Aula 10 - Interface Gráfica / Correção Exercício Palíndromo
+#### 05/04/2021 -> Aula 10 - Interface Gráfica / Correção Exercício Palíndromo
 - [Desafio05Palindromos](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210322/Desafio05Palindromos/app/src/main)
+
+#### 07/04/2021 -> Aula 11 - Layouts
+- [Layouts](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210407/Layouts/app/src/main)
