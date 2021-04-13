@@ -38,3 +38,6 @@ Repositório de atividades e exercícios da graduação de Tecnologia em Anális
 
 #### 07/04/2021 -> Aula 11 - Layouts
 - [Layouts](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210407/Layouts/app/src/main)
+
+#### 12/04/2021 -> Aula 12 - Listagem de Dados
+- [Listagem de Dados](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210412/Layouts/app/src/main)
