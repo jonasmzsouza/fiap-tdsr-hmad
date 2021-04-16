@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#d7d7d7"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/orcamento" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:text="@string/informe_material" />
+
+    <RadioGroup
+        android:id="@+id/rdgListaMaterial"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rdbPisoBcoBaixoBril"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/piso_branco_baixo_brilho" />
+
+        <RadioButton
+            android:id="@+id/rdbPisoAlbania45x45"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/piso_albania_45x45" />
+
+        <RadioButton
+            android:id="@+id/rdbPorcelanatoPerlatoBco"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/porcelanato_perlato_branco" />
+
+        <RadioButton
+            android:id="@+id/rdbRevestimentoMosaico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/revestimento_mosaico" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:text="@string/informe_medida_m2"/>
+
+    <EditText
+        android:id="@+id/txtMedidaM2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="numberDecimal"
+        android:text="10"/>
+
+    <CheckBox
+        android:id="@+id/chkFrete"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/ultra_frete_mega_rapido"/>
+
+    <Button
+        android:background="#28ad88"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:onClick="calcularOrcamento"
+        android:text="Calcular"/>
+
+    <TextView
+        android:id="@+id/txtValorCalculado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

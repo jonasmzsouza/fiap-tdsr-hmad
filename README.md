@@ -41,3 +41,6 @@ Repositório de atividades e exercícios da graduação de Tecnologia em Anális
 
 #### 12/04/2021 -> Aula 12 - Listagem de Dados
 - [Listagem de Dados](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210412/Layouts/app/src/main)
+
+#### 14/04/2021 -> Aula 13 - 1º Semestre - 2º CheckPoint
+- [Listagem de Dados](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210414/OrcamentoDeMaterialDeConstrucao/app/src/main)
