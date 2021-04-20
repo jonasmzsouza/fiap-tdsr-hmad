@@ -8,4 +8,8 @@
     <string name="revestimento_mosaico">Revestimento Mosaico</string>
     <string name="informe_medida_m2">Informe a medida em m²:</string>
     <string name="ultra_frete_mega_rapido">Ultra frete mega rápido</string>
+    <string name="informe_corretamente_m2">Informe corretamente a medida de metros quadrados</string>
+    <string name="informe_maior_que_0">Informe a medida maior que 0</string>
+    <string name="ocorreu_um_erro">Ocorreu um erro</string>
+    <string name="calcular">Calcular</string>
 </resources>

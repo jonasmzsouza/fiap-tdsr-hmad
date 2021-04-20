@@ -13,14 +13,14 @@
         android:layout_marginBottom="10dp"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:text="@string/orcamento" />
 
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:text="@string/informe_material" />
 
     <RadioGroup
@@ -58,7 +58,7 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:text="@string/informe_medida_m2"/>
 
     <EditText
@@ -79,9 +79,9 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:onClick="calcularOrcamento"
-        android:text="Calcular"/>
+        android:text="@string/calcular"/>
 
     <TextView
         android:id="@+id/txtValorCalculado"
@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 </LinearLayout>
