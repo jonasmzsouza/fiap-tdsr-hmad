@@ -1,6 +1,11 @@
 # Hybrid Mobile App Development
 
-Desenvolvimento de apps para dispositivos móveis de forma híbrida para as plataformas Android e iOS, utilizando o React Native com o poder da linguagem JavaScript. Abordagem em Interface, Eventos, Props, State, Navegação, Multimídia, Notificações, Persistência, UX, Serviços RESTFul - JSON, Integrações, Design Patterns e IoT
+<blockquote>
+    <p>
+        Desenvolvimento de apps para dispositivos móveis de forma híbrida para as plataformas Android e iOS, utilizando o React Native com o poder da linguagem JavaScript. Abordagem em Interface, Eventos, Props, State, Navegação, Multimídia, Notificações, Persistência, UX, Serviços RESTFul - JSON, Integrações, Design Patterns e IoT
+    </p>
+    <footer>— <cite><a href="https://www.fiap.com.br">FIAP</a></cite></footer>
+</blockquote>
 
 Repositório de atividades e exercícios da graduação de Tecnologia em Análise e Desenvolvimento de Sistemas na FIAP ano de 2021.
 
@@ -46,6 +51,11 @@ Repositório de atividades e exercícios da graduação de Tecnologia em Anális
 - [OrcamentoDeMaterialDeConstrucao](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210414/OrcamentoDeMaterialDeConstrucao/app/src/main)
 
 ### JavaScript OO
-#### 26/04/2021 -> Aula 14 - Introdução ao JavaScript OO no Node.js (Configuração do Ambiente)
 #### 28/04/2021 -> Aula 15 - JavaScript OO no Node.js com Babel
-- [HelloWorld](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210428/HelloWorld)
+- [HelloWorld](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210428/helloworld)
+
+#### 03/05/2021 -> Aula 16 - React Native
+- [OlaMundo](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210503/OlaMundo)
+
+#### 05/05/2021 -> Aula 17 - React Native - Componentes: View, Text e TextInput
+- [Componentes](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210505/Componentes)
