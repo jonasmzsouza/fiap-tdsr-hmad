@@ -57,5 +57,8 @@ Repositório de atividades e exercícios da graduação de Tecnologia em Anális
 #### 03/05/2021 -> Aula 16 - React Native
 - [OlaMundo](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210503/OlaMundo)
 
-#### 05/05/2021 -> Aula 17 - React Native - Componentes: View, Text e TextInput
-- [Componentes](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210505/Componentes)
+#### 05/05/2021 -> Aula 17 - React Native - Componentes
+- [View, Text e TextInput](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210505/Componentes)
+
+#### 10/05/2021 -> Aula 18 - React Native - Componentes
+- [Image, Button, TouchableOpacity, TouchableHighlight, Switch](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210510/Componentes2)
