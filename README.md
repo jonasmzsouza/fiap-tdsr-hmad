@@ -65,3 +65,6 @@ Repositório de atividades e exercícios da graduação de Tecnologia em Anális
 
 #### 12/05/2021 -> Aula 19 - React Native - Componentes Avançados
 - [ActivityIndicator, ScrollView, KeyboardAvoidingView, FlatList, StatusBar](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210512/ComponentesAvancados)
+
+#### 17/05/2021 -> Aula 20 - React Native - Componentes Personalizados
+- [CheckBox](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210517/ComponentesPersonalizados)
