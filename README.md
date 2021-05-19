@@ -62,3 +62,6 @@ Repositório de atividades e exercícios da graduação de Tecnologia em Anális
 
 #### 10/05/2021 -> Aula 18 - React Native - Componentes
 - [Image, Button, TouchableOpacity, TouchableHighlight, Switch](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210510/Componentes2)
+
+#### 12/05/2021 -> Aula 19 - React Native - Componentes Avançados
+- [ActivityIndicator, ScrollView, KeyboardAvoidingView, FlatList, StatusBar](https://github.com/jonasmzsouza/fiap-tdsr-hmad/tree/master/20210512/ComponentesAvancados)
