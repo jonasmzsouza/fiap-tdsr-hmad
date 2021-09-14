@@ -18,6 +18,8 @@ const usuarios = [
     }    
 ]
 
+const livros = []
+
 app.post('/login', (req, res) => {
     try {
         const { usuario, senha } = req.body
