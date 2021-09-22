@@ -15,17 +15,23 @@ const App = () => {
         <AppStack.Screen
           component={ Login }
           name='login'
-          option={{
+          options={{
             title : 'login'
           }}/>
 
         <AppStack.Screen
           component={ Home }
-          name='home' />
+          name='home'
+          options={{
+            title : 'Listagem de livros'
+          }} />
 
         <AppStack.Screen
           component={ CadastroLivros }
-          name='cadastroLivros' />
+          name='cadastroLivros'
+          options={{
+            title : 'Formulário de livros'
+          }} />
       </AppStack.Navigator>
     </NavigationContainer>
   )
