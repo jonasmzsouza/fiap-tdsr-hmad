@@ -6,6 +6,7 @@ import React, {
 import {
   Alert,
   FlatList,
+  RefreshControl,
   Text,
   View,
 } from 'react-native'
@@ -13,6 +14,8 @@ import {
 import {
     SpeedDial,
 } from 'react-native-elements'
+
+import ListLivroItem from '../ListLivroItem'
 
 import jwtDecode from 'jwt-decode'
 
@@ -26,6 +29,7 @@ const Home = ( props ) => {
   const [isAdmin, setIsAdmin] = useState(false)
   const [token, setToken] = useState('')
   const [livros, setLivros] = useState([])
+  const [isRefreshing, setIsRefreshing] = useState(false)
 
     const sair = () => {
       removeToken(() => {
@@ -44,29 +48,50 @@ const Home = ( props ) => {
     }
 
     const getInitialData = ( jwt ) => {
+      setIsRefreshing(true)
       getLivros(jwt)
       .then((response) => setLivros(response.data))
-      .catch(() => Alert.alert('Erro', 'Não foi possível recuperar os dados da API'))      
+      .catch(() => Alert.alert('Erro', 'Não foi possível recuperar os dados da API')) 
+      .finally(() => setIsRefreshing(false))
     }
 
     useEffect(() => {
       readToken((error, success) => {
-        if ( !error ) {
+        if ( !error && success && success.trim().length > 0 ) {
           const payload = jwtDecode(success)
           setIsAdmin(payload.admin)
           setToken(success)
           getInitialData(success)
         }
       })
-    })
+    }, [])
+
+    const abrirDescricaoLivro = (livro) => {
+      props.navigation.navigate('descricaoLivro', { livro, isAdmin, token })
+    }
 
     return (
       <View style={{ flex: 1, padding: 16}}>
 
+        { livros.length === 0 && (
+          <Text style={{ textAlign : 'center' }}>
+            Não há livros para serem exibidos!
+          </Text>
+        )}
+
         <FlatList 
           data={ livros }
           keyExtractor={ (item) => item.id }
-          renderItem={ ({item}) => <Text>{item.titulo}</Text>} />
+          renderItem={ ({item}) => (
+            <ListLivroItem 
+              livro={ item }
+              onPress={ () => abrirDescricaoLivro( item )} />
+          )}
+          refreshControl={
+            <RefreshControl
+              onRefresh={ () => getInitialData(token)}
+              refreshing={ isRefreshing } />
+          } />
 
         <SpeedDial
           isOpen={open}
@@ -75,13 +100,13 @@ const Home = ( props ) => {
           onOpen={() => setOpen(!open)}
           onClose={() => setOpen(!open)}
         >
-          {/* { isAdmin && ( */}
+          { isAdmin && (
             <SpeedDial.Action
               icon={{ name: 'add', color: '#fff' }}
               title="Add"
               onPress={() => add()}
             />
-          {/* )} */}
+          )}
 
           <SpeedDial.Action
             icon={{ 

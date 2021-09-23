@@ -6,6 +6,7 @@ const AppStack = createNativeStackNavigator()
 
 import Login from './src/components/screens/Login'
 import Home from './src/components/screens/Home'
+import DescricaoLivro from './src/components/screens/DescricaoLivro'
 import CadastroLivros from './src/components/screens/CadastroLivros'
 
 const App = () => {
@@ -32,6 +33,10 @@ const App = () => {
           options={{
             title : 'Formulário de livros'
           }} />
+
+        <AppStack.Screen
+          component={ DescricaoLivro }
+          name='descricaoLivro' />          
       </AppStack.Navigator>
     </NavigationContainer>
   )

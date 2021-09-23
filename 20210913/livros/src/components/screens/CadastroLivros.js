@@ -5,6 +5,7 @@ import React, {
 import {
   Alert,
     SafeAreaView,
+    ScrollView,
     Text
 } from 'react-native'
 
@@ -67,6 +68,7 @@ const CadastroLivros = ( props ) => {
   }
 
     return (
+      <ScrollView>
         <SafeAreaView style={{ padding : 16 }}>
           <Text>Título:</Text>
           <Input
@@ -98,6 +100,7 @@ const CadastroLivros = ( props ) => {
             title='Salvar' />
 
         </SafeAreaView>
+      </ScrollView>
     )
 }
 

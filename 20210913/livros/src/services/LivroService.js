@@ -42,3 +42,19 @@ export const postLivro = (jwt, titulo, descricao, editora, autor, paginas) => {
     }
   })
 }
+
+/**
+ * Exclui um livro via API
+ * @param {string} jwt 
+ * @param {string} id 
+ * @returns 
+ */
+export const deleteLivro = async (jwt, id) => {
+  return axios({
+    method : 'delete',
+    url : URL_LIVROS_API + '/' + id,
+    headers : {
+      'Authorization' : jwt
+    }
+  })
+}
