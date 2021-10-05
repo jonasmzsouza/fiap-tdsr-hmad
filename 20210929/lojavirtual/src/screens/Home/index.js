@@ -1,4 +1,8 @@
-import React from 'react'
+import React,{
+  useContext,
+  useEffect,
+  useState
+} from 'react'
 
 import {
   FlatList,
@@ -14,7 +18,28 @@ import ListItemProduto from '../../components/ListItemProduto'
 
 import produtos from '../../data/produtos.json'
 
+import CarrinhoContext from '../../contexts/CarrinhoContext'
+
+import { valorEmRealFormatado } from '../../utils'
+
 const Home = (props) => {
+  const { carrinho } = useContext(CarrinhoContext)
+  const [ totalCarrinho, setTotalCarrinho ] = useState(0)
+
+  useEffect(() => {
+    let total = 0
+    carrinho.forEach((produto) => {
+      total += parseInt(produto.quantidade) * parseFloat(produto.valor)
+    })
+
+    setTotalCarrinho(total)
+
+  }, [carrinho])
+
+  const visualizarCarrinho = () => {
+    props.navigation.navigate('carrinho')
+  }
+
   return (
     <View style={{ paddingBottom : 50 }}>
       <Button 
@@ -26,8 +51,8 @@ const Home = (props) => {
           name : 'shopping-cart',
           type : 'font-awesome-5'
         }}
-        onPress={() => {}}
-        title='Visualizar carrinho (R$ 0.00)' />
+        onPress={() => visualizarCarrinho()}
+        title={`Visualizar carrinho (${valorEmRealFormatado(totalCarrinho)})`} />
 
       <FlatList
         data={ produtos }
